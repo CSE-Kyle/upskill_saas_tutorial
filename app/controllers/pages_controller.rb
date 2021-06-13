@@ -1,4 +1,4 @@
 class PagesController < ApplicationController
-    def home
+    def home # function name must match the file name on "pages" directory
     end
 end 
