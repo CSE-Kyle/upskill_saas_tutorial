@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
           </button>
           
-          <%= link_to "/", class: "navbar-brand" do %> <!--link in rails-->
+          <%= link_to root_path, class: "navbar-brand" do %> <!--link in rails; dynamic link(root_path)-->
             <i class="fas fa-users"></i>
             DevMatch
           <% end %>
@@ -29,7 +29,7 @@
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "About", "/about" %></li> <!--link in rails-->
+            <li><%= link_to "About", about_path %></li> <!--link in rails; dynamic link(about_path)-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
