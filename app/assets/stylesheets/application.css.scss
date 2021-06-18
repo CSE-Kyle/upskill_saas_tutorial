@@ -32,6 +32,19 @@
   border: none;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 1px solid white;
+  
+  &:hover, &:focus {
+    background-color: #80e3ff;
+    transition: 0.5s;
+  }
+}
+
 .navbar-brand {
   font-family: 'Open Sans', sans-serif; 
   font-weight: 800;
