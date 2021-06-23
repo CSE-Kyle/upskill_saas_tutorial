@@ -1,8 +1,5 @@
 class Contact < ActiveRecord::Base 
-  # id
-  # name
-  # email
-  # comments
-  # created_at
-  # updated_at
+  validates :name, presence: true 
+  validates :email, presence: true 
+  validates :comments, presence: true
 end 
