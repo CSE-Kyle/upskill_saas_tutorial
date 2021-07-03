@@ -78,3 +78,30 @@ h1, h2, h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: xx-large;
 }
+
+// text animation 
+.home-heading {
+  opacity: 0;
+  transform: translateY(-3rem);
+  animation: fadeInDown 1000ms ease 0.5s forwards;
+}
+
+.home-subheading {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 1000ms ease 2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
