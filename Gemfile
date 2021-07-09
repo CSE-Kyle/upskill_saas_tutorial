@@ -62,4 +62,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 source 'https://rubygems.org'
-ruby '3.0.2'
+ruby '2.3.0'
