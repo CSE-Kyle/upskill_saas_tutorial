@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Background Gradient
+.navbar, .home-callout {
+  // Gradient provided by @_ighosh at uiGradients.com
+  background: #00c6ff;  
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  
+  background: linear-gradient(to right, #0072ff, #00c6ff); 
+}
+
+// nav styles
+.navbar {
+  border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 1px solid white;
+  
+  &:hover, &:focus {
+    background-color: #80e3ff;
+    transition: 0.5s;
+  }
+}
+
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 800;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-size: 18px;
+  
+  &:hover { // scss 
+    color: gold;
+    transition: 0.5s;
+  }
+}
+
+// homepage styles
+.home-callout {
+  color: white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+// Typography styles
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-description {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: xx-large;
+}
+
+// text animation 
+.home-heading {
+  opacity: 0;
+  transform: translateY(-3rem);
+  animation: fadeInDown 1000ms ease 0.5s forwards;
+}
+
+.home-subheading {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 1000ms ease 2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
